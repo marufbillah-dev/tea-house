@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="container mx-auto ">
-        <!-- hero section -->
-      <section id="hero" class="flex justify-center gap-2.5 items-center my-[65px]">
+    <main class="container mx-auto">
+      <!-- hero section -->
+      <section id="hero" class="flex justify-between items-center my-[65px]">
         <!-- hero contents -->
         <div class="hero-contents max-w-[628px] space-y-[30px]">
           <h1 class="text-[5rem] font-extrabold text-[#1C1C1C]">
@@ -28,23 +28,62 @@
             To Your Taste Buds.
           </p>
           <button
-            class="bg-linear-to-r to-[#FF0000] from-[#FF8938] py-4 px-5 rounded-xl font-bold text-[1.25rem] text-white cursor-pointer"
+            class="group inline-flex items-center gap-2 bg-linear-to-r from-[#FF8938] to-[#FF0000] hover:from-[#FF0000] hover:to-[#FF8938] text-white font-bold text-[1.25rem] py-4 px-5 rounded-xl shadow-lg shadow-red-500/30 hover:shadow-xl hover:shadow-red-500/50 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-out"
           >
-            Explore More <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            Explore More
+            <i
+              class="fa-solid fa-arrow-up-right-from-square transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+            ></i>
           </button>
         </div>
         <!-- hero image/banner -->
-        <div class="hero-image relative">
+        <div class="hero-image relative self-end">
           <img src="./images/banner.png" alt="" />
-          <div class="image-badge bg-white flex justify-center gap-4 items-center py-5 px-6 rounded-xl shadow-lg w-fit z-50 absolute bottom-3 left-25">
+          <div
+            class="image-badge bg-white flex justify-center gap-4 items-center py-5 px-6 rounded-xl shadow-lg w-fit z-50 absolute -bottom-7 left-25"
+          >
             <div class="badge-icon text-[#FFDC64] text-4xl">
               <i class="fa-solid fa-star"></i>
             </div>
             <div class="badge-content">
               <h3 class="rating font-extrabold text-3xl">5.00</h3>
-              <p class="font-semibold text-[1rem] text-[#777777]">Trust Pilot Ratings</p>
+              <p class="font-semibold text-[1rem] text-[#777777]">
+                Trust Pilot Ratings
+              </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- featured section -->
+      <section id="featured" class="my-[65px] text-center">
+        <h2 class="font-extrabold text-[45px] text-[#1C1C1C] mb-5">Our Featured Products</h2>
+        <p class="font-medium text-[1rem] text-[#777777] leading-7 max-w-[900px] my-auto mx-auto mb-12">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomized words which don't look even slightly believable.
+        </p>
+        <div class="featured-card-container flex justify-center gap-6">
+            <div class="featured-card bg-linear-to-t from-[#f4f4f400] to-[#F4F4F4] rounded-xl p-7 w-fit">
+                <img src="./images/tea-1.png" alt="Milk Tea" class="h-[212px] mb-7 mx-auto">
+                <h3 class="product-title text-[#1C1C1C] text-2xl font-extrabold mb-2.5">Milk Tea</h3>
+                <p class="product-info font-semibold text-[#777777] text-[1rem] max-w-52">Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="featured-card bg-linear-to-t from-[#f4f4f400] to-[#F4F4F4] rounded-xl p-7 w-fit">
+                <img src="./images/tea-2.png" alt="Milk Tea" class="h-[212px] mb-7 mx-auto">
+                <h3 class="product-title text-[#1C1C1C] text-2xl font-extrabold mb-2.5">Black Tea</h3>
+                <p class="product-info font-semibold text-[#777777] text-[1rem] max-w-52">Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="featured-card bg-linear-to-t from-[#f4f4f400] to-[#F4F4F4] rounded-xl p-7 w-fit">
+                <img src="./images/tea-3.png" alt="Milk Tea" class="h-[212px] mb-7 mx-auto">
+                <h3 class="product-title text-[#1C1C1C] text-2xl font-extrabold mb-2.5">Lemon Tea</h3>
+                <p class="product-info font-semibold text-[#777777] text-[1rem] max-w-52">Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="featured-card bg-linear-to-t from-[#f4f4f400] to-[#F4F4F4] rounded-xl p-7 w-fit">
+                <img src="./images/tea-4.png" alt="Milk Tea" class="h-[212px] mb-7 mx-auto">
+                <h3 class="product-title text-[#1C1C1C] text-2xl font-extrabold mb-2.5">Green Tea</h3>
+                <p class="product-info font-semibold text-[#777777] text-[1rem] max-w-52">Creamer could be replaced by fresh milk</p>
+            </div>
         </div>
       </section>
     </main>
