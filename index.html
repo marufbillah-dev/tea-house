@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Tea House</title>
     <link
       rel="stylesheet"
@@ -28,12 +29,20 @@
             To Your Taste Buds.
           </p>
           <button
-            class="group inline-flex items-center gap-2 bg-linear-to-r from-[#FF8938] to-[#FF0000] hover:from-[#FF0000] hover:to-[#FF8938] text-white font-bold text-[1.25rem] py-4 px-5 rounded-xl shadow-lg shadow-red-500/30 hover:shadow-xl hover:shadow-red-500/50 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-out"
+            class="group relative inline-flex items-center gap-2 py-4 px-5 rounded-xl font-bold text-[1.25rem] text-white cursor-pointer overflow-hidden shadow-lg shadow-red-500/30 hover:shadow-xl hover:shadow-red-500/50 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-out"
           >
-            Explore More
-            <i
-              class="fa-solid fa-arrow-up-right-from-square transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-            ></i>
+            <span
+              class="absolute inset-0 bg-linear-to-r from-[#FF8938] to-[#FF0000]"
+            ></span>
+            <span
+              class="absolute inset-0 bg-linear-to-r from-[#FF0000] to-[#FF8938] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></span>
+            <span class="relative flex items-center gap-2">
+              Explore More
+              <i
+                class="fa-solid fa-arrow-up-right-from-square transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+              ></i>
+            </span>
           </button>
         </div>
         <!-- hero image/banner -->
@@ -216,8 +225,13 @@
       <!-- client section -->
       <section
         id="client"
-        class="my-[130px] py-[85px] px-[70px] bg-linear-to-r from-[#FF8938] to-[#FF0000] rounded-xl flex justify-between items-center"
+        class="my-[130px] py-[85px] px-[70px] bg-linear-to-r from-[#FF8938] to-[#FF0000] rounded-xl flex justify-between items-center relative"
       >
+        <img
+          src="./images/bg_cup.png"
+          alt=""
+          class="absolute bottom-0 left-50"
+        />
         <!-- section contents -->
         <div class="section-contents max-w-[440px]">
           <h2 class="text-[#F4F4F4] font-extrabold text-[45px] mb-5">
@@ -236,7 +250,12 @@
               class="absolute inset-0 bg-linear-to-r from-[#FF8938] to-[#FF0000] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             ></span>
             <span
-              class="relative bg-linear-to-r from-[#FF8938] to-[#FF0000] bg-clip-text text-transparent group-hover:text-white group-hover:bg-none transition-all duration-300"
+              class="relative bg-linear-to-r from-[#FF8938] to-[#FF0000] bg-clip-text text-transparent group-hover:opacity-0 transition-opacity duration-300"
+            >
+              Show All
+            </span>
+            <span
+              class="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               Show All
             </span>
@@ -324,47 +343,160 @@
           </p>
         </div>
         <div class="card-container flex justify-between">
-          <div class="card rounded-xl border border-[#D2D2D2] p-5 max-w-[360px] space-y-5">
+          <div
+            class="card rounded-xl border border-[#D2D2D2] p-5 max-w-[360px] space-y-5"
+          >
             <img src="./images/news-1.png" alt="" class="rounded-xl" />
             <div class="card-contents space-y-2.5">
               <p class="font-medium text-[1rem] text-[#777777]">Feb 05, 2027</p>
-              <h3 class="font-extrabold text-[1.25rem] text-[#1C1C1C] capitalize">
+              <h3
+                class="font-extrabold text-[1.25rem] text-[#1C1C1C] capitalize"
+              >
                 Collecting 8 points for discount
               </h3>
               <p class="font-medium text-[1rem] text-[#777777]">
                 There are many variations of passages of Lorem Ipsum available.
               </p>
-              <a href="" class="font-bold text-[1rem] text-[#1C1C1C]">Learn More</a>
+              <a href="" class="font-bold text-[1rem] text-[#1C1C1C]"
+                >Learn More</a
+              >
             </div>
           </div>
-          <div class="card rounded-xl border border-[#D2D2D2] p-5 max-w-[360px] space-y-5">
+          <div
+            class="card rounded-xl border border-[#D2D2D2] p-5 max-w-[360px] space-y-5"
+          >
             <img src="./images/news-2.png" alt="" class="rounded-xl" />
             <div class="card-contents space-y-2.5">
               <p class="font-medium text-[1rem] text-[#777777]">Feb 05, 2027</p>
-              <h3 class="font-extrabold text-[1.25rem] text-[#1C1C1C] capitalize">
+              <h3
+                class="font-extrabold text-[1.25rem] text-[#1C1C1C] capitalize"
+              >
                 Collecting 8 points for discount
               </h3>
               <p class="font-medium text-[1rem] text-[#777777]">
                 There are many variations of passages of Lorem Ipsum available.
               </p>
-              <a href="" class="font-bold text-[1rem] text-[#1C1C1C]">Learn More</a>
+              <a href="" class="font-bold text-[1rem] text-[#1C1C1C]"
+                >Learn More</a
+              >
             </div>
           </div>
-          <div class="card rounded-xl border border-[#D2D2D2] p-5 max-w-[360px] space-y-5">
+          <div
+            class="card rounded-xl border border-[#D2D2D2] p-5 max-w-[360px] space-y-5"
+          >
             <img src="./images/news-3.png" alt="" class="rounded-xl" />
             <div class="card-contents space-y-2.5">
               <p class="font-medium text-[1rem] text-[#777777]">Feb 05, 2027</p>
-              <h3 class="font-extrabold text-[1.25rem] text-[#1C1C1C] capitalize">
+              <h3
+                class="font-extrabold text-[1.25rem] text-[#1C1C1C] capitalize"
+              >
                 Collecting 8 points for discount
               </h3>
               <p class="font-medium text-[1rem] text-[#777777]">
                 There are many variations of passages of Lorem Ipsum available.
               </p>
-              <a href="" class="font-bold text-[1rem] text-[#1C1C1C]">Learn More</a>
+              <a href="" class="font-bold text-[1rem] text-[#1C1C1C]"
+                >Learn More</a
+              >
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer
+      class="px-[230px] py-[130px] bg-linear-to-r from-[#FF8938]/10 to-[#FF0000]/10"
+    >
+      <!-- footer top -->
+      <div class="footer-top flex justify-between items-center mb-25">
+        <a href="#hero"><img src="./images/cup.png" alt="" /></a>
+        <div class="get-started flex items-center gap-10">
+          <h3 class="font-medium text-[1.25rem] text-[#494949]">
+            Ready to get started?
+          </h3>
+          <button
+            class="group relative inline-flex items-center gap-2 py-4 px-6 rounded-xl font-bold text-[1.25rem] text-white cursor-pointer overflow-hidden shadow-lg shadow-red-500/30 hover:shadow-xl hover:shadow-red-500/50 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-out"
+          >
+            <!-- Base Gradient -->
+            <span
+              class="absolute inset-0 bg-linear-to-r from-[#FF8938] to-[#FF0000]"
+            ></span>
+
+            <!-- Hover Gradient -->
+            <span
+              class="absolute inset-0 bg-linear-to-r from-[#FF0000] to-[#FF8938] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></span>
+
+            <!-- Text -->
+            <span class="relative">Get Started</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- footer main -->
+      <div class="footer-main flex justify-between mb-15">
+        <div class="quick-links space-y-5.5">
+          <h3 class="font-semibold text-[1.25rem] text-[#1C1C1C]">
+            Quick Links
+          </h3>
+          <div class="links flex flex-col gap-4.5 text-[1rem] text-[#494949]">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Insurance</a>
+            <a href="">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="our-services space-y-5.5">
+          <h3 class="font-semibold text-[1.25rem] text-[#1C1C1C]">
+            Our Services
+          </h3>
+          <div class="links flex flex-col gap-4.5 text-[1rem] text-[#494949]">
+            <a href="">Life Insurance</a>
+            <a href="">Car Insurance</a>
+            <a href="">Health Insurance</a>
+            <a href="">House Insurance</a>
+          </div>
+        </div>
+        <div class="help space-y-5.5">
+          <h3 class="font-semibold text-[1.25rem] text-[#1C1C1C]">Help</h3>
+          <div class="links flex flex-col gap-4.5 text-[1rem] text-[#494949]">
+            <a href="">FAQs</a>
+            <a href="">Contact Us</a>
+          </div>
+        </div>
+        <div class="newsletter space-y-8">
+          <h3 class="font-semibold text-[1.5rem] text-[#1C1C1C] max-w-[216px]">
+            Subscribe to our newsletter
+          </h3>
+          <div class="flex flex-col gap-8 text-[1rem] text-[#494949]">
+            <div class="email-submit flex items-center gap-2">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Email Address"
+                class="outline-0 p-2.5 w-[270px] border-b-2 border-[#494949]"
+              />
+              <button
+                class="group relative inline-flex items-center justify-center p-2 rounded-full aspect-square cursor-pointer overflow-hidden shadow-lg shadow-red-500/30 hover:shadow-xl hover:shadow-red-500/50 transition-all duration-300"
+              >
+                <span
+                  class="absolute inset-0 bg-linear-to-r from-[#FF8938] to-[#FF0000]"
+                ></span>
+                <span
+                  class="absolute inset-0 bg-linear-to-r from-[#FF0000] to-[#FF8938] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></span>
+                <i class="fa-solid fa-angle-right relative text-white"></i>
+              </button>
+            </div>
+            <div class="social-links text-2xl space-x-3">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-[1rem] text-[#494949] font-medium text-center">&copy; 2026 Maruf Billah - All rights reserved.</p>
+    </footer>
   </body>
 </html>
